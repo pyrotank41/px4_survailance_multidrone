@@ -5,6 +5,11 @@
 [submodule "ros2_ws/src/px4_msgs"]
 	path = ros2_ws/src/px4_msgs
 	url = git@github.com:PX4/px4_msgs.git
+
 [submodule "ros2_ws/src/px4_ros_com"]
 	path = ros2_ws/src/px4_ros_com
 	url = git@github.com:PX4/px4_ros_com.git
+
+[submodule "ros2_ws/src/drone_node"]
+	path = ros2_ws/src/drone_node
+	url = git@github.com:PX4/drone_node.git
