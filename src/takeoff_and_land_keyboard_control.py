@@ -18,7 +18,7 @@ async def setup():
     :return:
     """
 
-    await drone.connect(system_address="udp://:14540")
+    await drone.connect(system_address="udp://:14030")
 
     print("Waiting for drone to connect...")
     async for state in drone.core.connection_state():
@@ -196,6 +196,7 @@ async def print_position(drone=drone):
 if __name__ == "__main__":
 
     loop = asyncio.get_event_loop()
+    print("looping setup()")
     loop.run_until_complete(setup())
     loop.run_until_complete(main())
     loop.run_until_complete(print_in_air(drone))

@@ -1,0 +1,25 @@
+ros2 topic pub -r 10 /fmu/gimbal_manager_set_attitude/in  px4_msgs/msg/GimbalManagerSetAttitude "{
+origin_sysid: 0,
+origin_compid: 0,
+target_system: 0,
+target_component: 0,
+flags: 12,
+gimbal_device_id: 0,
+q: [0.0, 0.0, 0.0, 0.0],
+angular_velocity
+}"
+
+ros2 topic pub -r 10 /fmu/gimbal_manager_set_manual_control/in  px4_msgs/msg/GimbalManagerSetManualControl "{
+origin_sysid: 0,
+origin_compid: 0,
+target_system: 0,
+target_component: 0,
+flags: 12,
+gimbal_device_id: 0,
+pitch: 0.5,
+yaw: 0.5,
+pitch_rate: NAN,
+yaw_rate: NAN
+}"
+
+
