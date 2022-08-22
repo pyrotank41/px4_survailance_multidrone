@@ -1,0 +1,8 @@
+version: '3.3'
+
+services:
+  ros2_ws:
+    build: ./
+    volumes: 
+      - ./ros2_ws:/ros2_container_ws
+    restart: always
